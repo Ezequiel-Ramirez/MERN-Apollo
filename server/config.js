@@ -1,0 +1,1 @@
+export const MONGODB_URI = 'mongodb+srv://ezequiel:ezequiel@cluster0.sqovtei.mongodb.net/test';
