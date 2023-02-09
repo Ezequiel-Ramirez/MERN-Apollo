@@ -1,1 +1,1 @@
-export const MONGODB_URI = 'mongodb+srv://ezequiel:ezequiel@cluster0.sqovtei.mongodb.net/test';
+export const MONGODB_URI = process.env.REACT_APP_MONGO_URL || 'mongodb://localhost/notes-app';
