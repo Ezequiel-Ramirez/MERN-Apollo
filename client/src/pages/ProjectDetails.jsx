@@ -6,7 +6,6 @@ import TaskList from '../components/tasks/TaskList'
 import TaskForm from '../components/tasks/TaskForm'
 import { useMutation } from '@apollo/client'
 import { DELETE_PROJECT } from '../graphql/projects'
-import { useHistory } from 'react-router-dom'
 
 const ProjectDetails = () => {
 
@@ -32,7 +31,7 @@ const ProjectDetails = () => {
       },
     })
 
-    history.push('/')
+    window.location.href = '/projects'
   }
 
   return (
