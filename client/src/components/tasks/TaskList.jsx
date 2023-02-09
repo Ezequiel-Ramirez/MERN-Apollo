@@ -3,7 +3,7 @@ import TaskCard from './TaskCard'
 
 const TaskList = ({ tasks }) => {
     return (
-        <div>
+        <div style={{borderRadius:'15px', width:'100%'}}>
             {tasks.map(task => (
                 <TaskCard key={task._id} task={task} />
             ))}

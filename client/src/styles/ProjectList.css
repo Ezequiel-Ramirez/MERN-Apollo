@@ -1,0 +1,7 @@
+.list {
+    list-style: none;
+    overflow-y: auto;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}

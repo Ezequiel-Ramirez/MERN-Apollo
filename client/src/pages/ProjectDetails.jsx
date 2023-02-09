@@ -1,14 +1,15 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useQuery } from '@apollo/client'
 import { GET_PROJECT } from '../graphql/projects'
 import TaskList from '../components/tasks/TaskList'
 import TaskForm from '../components/tasks/TaskForm'
 import { useMutation } from '@apollo/client'
 import { DELETE_PROJECT } from '../graphql/projects'
+import '../styles/ProjectDetail.css'
 
 const ProjectDetails = () => {
-
+  const navigate = useNavigate()
   const { id } = useParams()
 
   const [deleteProject] = useMutation(DELETE_PROJECT, {
@@ -30,17 +31,20 @@ const ProjectDetails = () => {
         id: project._id,
       },
     })
-
-    window.location.href = '/projects'
+    navigate('/projects')
   }
 
   return (
-    <div>
-      <h2>{project.name}</h2>
-      <p>{project.description}</p>
-      <button onClick={handleDelete}>Delete</button>
+    <div className='containerDetails'>
+      <div className='containerHeader'>
+        <h2>{project.name}</h2>
+        <p>{project.description}</p>
+        <button onClick={handleDelete} className='deleteProject'>Delete</button>
+      </div>
       <TaskForm />
-      <TaskList tasks={project.tasks} />
+      <div className='containerTasks'>
+        <TaskList tasks={project.tasks} />
+      </div>
     </div>
   )
 }

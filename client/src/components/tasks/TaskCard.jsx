@@ -17,9 +17,9 @@ const TaskCard = ({ task }) => {
     }
 
     return (
-        <div>
+        <div style={{borderRadius:' 15px', border: '1px solid white', width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px', margin: '5px', backgroundColor: 'white', color: 'black'}}>
             <h2>{task.title}</h2>
-            <button onClick={handleDelete}>Delete</button>
+            <button onClick={handleDelete} style={{borderRadius: '5px'}}>Delete</button>
         </div>
     )
 }

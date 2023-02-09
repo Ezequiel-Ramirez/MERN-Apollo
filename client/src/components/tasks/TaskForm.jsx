@@ -2,6 +2,7 @@ import React from 'react'
 import { useMutation, gql } from '@apollo/client'
 import { CREATE_TASK } from '../../graphql/tasks'
 import { useParams } from 'react-router-dom'
+import '../../styles/TaskForm.css'
 
 const TaskForm = () => {
     const { id } = useParams()
@@ -24,9 +25,9 @@ const TaskForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" name="title" placeholder="Task Name" />
-            <button type="submit">Add Task</button>
+        <form onSubmit={handleSubmit} className='containerFormTasks'>
+            <input type="text" name="title" placeholder="Task Name" style={{padding: '2px', borderRadius: '5px', width: '300px'}} />
+            <button type="submit" >Add Task</button>
         </form>
     )
 }

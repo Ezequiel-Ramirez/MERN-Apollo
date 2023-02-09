@@ -1,0 +1,34 @@
+
+.containerProjects {
+    width: 70%;
+    height: 100%;
+    background-color: #202020;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto 10px;
+    
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.titleProjects {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    margin: 10px;
+    text-align: left;
+}
+
+.containerForm {
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}

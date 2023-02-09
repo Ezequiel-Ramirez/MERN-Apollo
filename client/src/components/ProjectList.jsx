@@ -2,7 +2,7 @@ import React from 'react'
 import { useQuery, gql } from '@apollo/client'
 import { GET_PROJECTS } from '../graphql/projects'
 import ProjectCard from './ProjectCard'
-
+import '../styles/ProjectList.css'
 
 
 const ProjectList = () => {
@@ -13,7 +13,7 @@ const ProjectList = () => {
     console.log(data)
 
     return (
-        <div>
+        <div className='list'>
             {data.projects.map((project) => (
                 <ProjectCard key={project._id} project={project} />
             ))}

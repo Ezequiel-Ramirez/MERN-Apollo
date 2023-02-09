@@ -1,0 +1,49 @@
+.formProject{
+    width: 90%;
+    height: 100%;
+    
+}
+
+.inputProject {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.textareaProject {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.containerButton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.buttonProject {
+    width: 100px;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttonProject:hover {
+    background-color: #5080C2;
+    color: #000;
+
+}
